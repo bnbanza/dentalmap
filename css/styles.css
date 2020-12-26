@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+body {
+   width: 100%;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: 'Open Sans', sans-serif;
+    background: radial-gradient(circle, rgba(14,172,218,1) 0%, rgba(59,146,171,1) 35%, rgba(5,56,126,1) 100%);
+   color: #fff;
+
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+p {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+
+}
+
+.logo img:first-child {
+    width: 400px;
+    height: 400px;
+}
+
+.logo img:last-child {
+    position: absolute;
+    top: 27%;
+    left: 27%;
+    width: 180px;
+}
+
+.description {
+    padding: 0 20px;
+}
+
+h1 {
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 1px 2px #666, -1px -2px #666;
+    font-size: 45px;
+}
+
+p {
+    text-align: center;
+}
+
+.description p:last-child {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.btn img:first-child {
+    width: 205px;
+}
+
+.btn img:last-child {
+    width: 205px;
+    height: 59px;
+}
+
+@keyframes tooth {
+    0% { width: 150px; }
+    50% { width: 220px; left: 22%; top: 25%; }
+    100% { width: 150px; }
+}
+
+#tooth{
+    animation-name: tooth; 
+    animation-duration: 6s; 
+    animation-iteration-count: infinite;
+}
+
+section {
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    border-top: 4px dotted #ccc;
+    border-bottom: 4px dotted #ccc;
+    
+   
+}
+.section-container {
+    display: flex;
+
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.section-container div {
+    width: 480px;
+}
+
+ul {
+    list-style-type: none;
+    list-style-image: url(../img/check.svg);
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+#found {
+    margin-top: 38px;
+}
+
+.download p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.btn2 {
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+footer {
+    background: #999;
+    width: 100%;
+    height: 80px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer p {
+    padding-left: 50px;
+    font-size: 14px;
+}
+
+footer .social {
+    margin-right: 50px;
+}
+
+.social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        margin: 20px auto;
+        align-items: center;
+    }
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .logo img:first-child {
+        width: 40%;
+        height: 40%;
+    }
+    
+    .logo img:last-child {
+        width: 80px;
+        position: absolute;
+        left: 40%;
+        top: 22%;
+    }
+    @keyframes tooth {
+        0% { width: 80px; }
+        50% { width: 100px; }
+        100% { width: 80px; }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    .btn img:first-child {
+        width: 45%;
+    }
+    
+    .btn img:last-child {
+        width: 45%;
+        height: 45%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    section {
+        height: 100%;
+    }
+    .section-container {
+        flex-direction: column;
+    
+    }
+    .section-container div {
+        width: 100%;
+    }
+    #found {
+        margin-top: 0;
+    }
+    footer {
+        flex-direction: column-reverse;
+        padding-top: 10px;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: 12px;
+        padding: 0;
+    }
+    footer .social {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        margin: 20px auto;
+        align-items: center;
+    }
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .logo img:first-child {
+        width: 80%;
+        height: 80%;
+    }
+    
+    .logo img:last-child {
+        width: 100px;
+        position: absolute;
+        left: 33%;
+        top: 30%;
+    }
+    @keyframes tooth {
+        0% { width: 100px; }
+        50% { width: 120px; }
+        100% { width: 100px; }
+    }
+}
