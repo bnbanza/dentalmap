@@ -194,7 +194,7 @@ footer .social {
     }
     @keyframes tooth {
         0% { width: 80px; }
-        50% { width: 100px; }
+        50% { width: 130px; }
         100% { width: 80px; }
     }
 
@@ -221,6 +221,7 @@ footer .social {
     }
     .section-container {
         flex-direction: column;
+        padding: 0 8px;
     
     }
     .section-container div {
